@@ -111,6 +111,12 @@ sudo chown -R www-data:www-data /var/www/html/daloradius/
 sudo cp /var/www/html/daloradius/library/daloradius.conf.php.sample /var/www/html/daloradius/library/daloradius.conf.php
 sudo chmod 664 /var/www/html/daloradius/library/daloradius.conf.php
 
+=======================================
+cd /var/www/html/site/daloradius/app/common/includes
+sudo cp daloradius.conf.php.sample daloradius.conf.php
+sudo chown www-data:www-data daloradius.conf.php
+========================================
+
 sudo nano /var/www/html/daloradius/library/daloradius.conf.php
 
 #Make the following changes that match your database:
@@ -136,3 +142,4 @@ http://localhost/daloradius/login.php
 
 Username: administrator
 Password: radius
+https://computingforgeeks.com/how-to-install-freeradius-and-daloradius-on-ubuntu/
